@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "dd589e42-1ab3-4212-8d59-4f4cdab05564",
+		"name": "Коллекция для Timetta",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21922912"
+	},
+	"item": [
+		{
+			"name": "Вход в систему",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Типы оплаты",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkUzQUJEMzAxNzdEMEZDNjU2RDg4MDRFOTQ2RUJFOTdCNTJBRUQ2MzhSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjQ2dlRBWGZRX0dWdGlBVHBSdXZwZTFLdTFqZyJ9.eyJuYmYiOjE2NjE4NjY5NTgsImV4cCI6MTY2MTg3MDU1OCwiaXNzIjoiaHR0cHM6Ly9hdXRoLnRpbWV0dGEuY29tIiwiYXVkIjoid29ya3BvaW50LWFwaSIsImNsaWVudF9pZCI6ImV4dGVybmFsIiwic3ViIjoiTmVzdGVyb3ZBQHRlc3QtdGFzay5ydSIsImF1dGhfdGltZSI6MTY2MTg2Njk1OCwiaWRwIjoibG9jYWwiLCJuYW1lIjoi0JDQu9C10LrRgdCw0L3QtNGAINCd0LXRgdGC0LXRgNC-0LIiLCJ0ZW5hbnQiOiJ0ZXN0LXRhc2sucnUiLCJqdGkiOiJGRDdBRDhGOTY1QzIxNEUzM0IxMDU2RTI4RUQ0RkRBNyIsImlhdCI6MTY2MTg2Njk1OCwic2NvcGUiOlsiYWxsIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdfQ.iUd_JmHzTfzKp4hRdEG-ixINddTVY7VQgYroL3t_1r3PkJOW2UFe8JPfhz7jrkx3ykvt0Y5j12WNN0ujuZfFrgiVZ9oqj5oRAWvDcxHwMHeUHbwTDzbnJNoeb4Zkk7GBpusL_TKh_phTOBgVTf4tTb6-_bGVfNBsktCLOQNxjWa5CtJETkYPM0cp901NCnXINtTij3jl26FI7ssz94SdK4ry6MIYJ2yg8DNl9LFYLtfD39BeuxbWaJpvVCOgMisioHXmrhFpOB7psqNd5djryUiYOAspmBD6hfKyM88hbP2o9ccsveoT3hw1dlEXcrhJyLMtj6ooNxeGkLJDUMN_1g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://api.timetta.com/odata/ProjectBillingTypes",
+					"protocol": "https",
+					"host": [
+						"api",
+						"timetta",
+						"com"
+					],
+					"path": [
+						"odata",
+						"ProjectBillingTypes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Создание нового проекта",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api.timetta.com/odata/Projects",
+					"protocol": "https",
+					"host": [
+						"api",
+						"timetta",
+						"com"
+					],
+					"path": [
+						"odata",
+						"Projects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Изменение",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IkUzQUJEMzAxNzdEMEZDNjU2RDg4MDRFOTQ2RUJFOTdCNTJBRUQ2MzhSUzI1NiIsInR5cCI6ImF0K2p3dCIsIng1dCI6IjQ2dlRBWGZRX0dWdGlBVHBSdXZwZTFLdTFqZyJ9.eyJuYmYiOjE2NjE4NjY5NTgsImV4cCI6MTY2MTg3MDU1OCwiaXNzIjoiaHR0cHM6Ly9hdXRoLnRpbWV0dGEuY29tIiwiYXVkIjoid29ya3BvaW50LWFwaSIsImNsaWVudF9pZCI6ImV4dGVybmFsIiwic3ViIjoiTmVzdGVyb3ZBQHRlc3QtdGFzay5ydSIsImF1dGhfdGltZSI6MTY2MTg2Njk1OCwiaWRwIjoibG9jYWwiLCJuYW1lIjoi0JDQu9C10LrRgdCw0L3QtNGAINCd0LXRgdGC0LXRgNC-0LIiLCJ0ZW5hbnQiOiJ0ZXN0LXRhc2sucnUiLCJqdGkiOiJGRDdBRDhGOTY1QzIxNEUzM0IxMDU2RTI4RUQ0RkRBNyIsImlhdCI6MTY2MTg2Njk1OCwic2NvcGUiOlsiYWxsIiwib2ZmbGluZV9hY2Nlc3MiXSwiYW1yIjpbInB3ZCJdfQ.iUd_JmHzTfzKp4hRdEG-ixINddTVY7VQgYroL3t_1r3PkJOW2UFe8JPfhz7jrkx3ykvt0Y5j12WNN0ujuZfFrgiVZ9oqj5oRAWvDcxHwMHeUHbwTDzbnJNoeb4Zkk7GBpusL_TKh_phTOBgVTf4tTb6-_bGVfNBsktCLOQNxjWa5CtJETkYPM0cp901NCnXINtTij3jl26FI7ssz94SdK4ry6MIYJ2yg8DNl9LFYLtfD39BeuxbWaJpvVCOgMisioHXmrhFpOB7psqNd5djryUiYOAspmBD6hfKyM88hbP2o9ccsveoT3hw1dlEXcrhJyLMtj6ooNxeGkLJDUMN_1g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"managerId\": \"14ef4f7f-05ae-4cd1-b6da-a3ad83db2c26\"\r\n    \"organizationId\": \"Главпродукт\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.timetta.com/odata/Project(bcd753cc-0b80-47ae-a471-6ff7f06010e1)",
+					"protocol": "https",
+					"host": [
+						"api",
+						"timetta",
+						"com"
+					],
+					"path": [
+						"odata",
+						"Project(bcd753cc-0b80-47ae-a471-6ff7f06010e1)"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
